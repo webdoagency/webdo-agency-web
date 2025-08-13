@@ -51,13 +51,20 @@ const OurShops = () => {
             <Card key={index} className="shadow-card hover-lift border-border/50 overflow-hidden">
               <div className="grid lg:grid-cols-2 gap-8">
                 {/* Content */}
-                <div className="p-8 lg:p-12">
+                  <div className="p-8 lg:p-12">
                   <div className="flex items-start justify-between mb-4">
-                    <div>
-                      <h3 className="text-2xl font-bold mb-2">{shop.name}</h3>
-                      <Badge variant="secondary" className="bg-accent/20 text-accent">
-                        {shop.category}
-                      </Badge>
+                    <div className="flex items-center gap-4">
+                      <img 
+                        src="/ballers-logo.png" 
+                        alt="Ballers Logo" 
+                        className="h-12 w-auto"
+                      />
+                      <div>
+                        <h3 className="text-2xl font-bold mb-2">{shop.name}</h3>
+                        <Badge variant="secondary" className="bg-accent/20 text-accent">
+                          {shop.category}
+                        </Badge>
+                      </div>
                     </div>
                     <Button variant="outline" size="sm" asChild>
                       <a href={`https://${shop.url}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">

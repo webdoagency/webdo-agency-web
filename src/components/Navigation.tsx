@@ -46,9 +46,11 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              Webdo Agency
-            </h1>
+            <img 
+              src="/webdo-logo.png" 
+              alt="Webdo Agency" 
+              className="h-8 w-auto filter brightness-0 invert"
+            />
           </div>
 
           {/* Desktop Navigation */}

@@ -45,12 +45,13 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex items-center gap-3">
             <img 
               src="/lovable-uploads/30cc02e5-c90e-4957-a097-8f0c3a43a41c.png" 
               alt="Webdo Agency" 
               className="h-8 w-auto"
             />
+            <span className="text-xl font-semibold text-foreground">Webdo Agency</span>
           </div>
 
           {/* Desktop Navigation */}

@@ -238,6 +238,9 @@ const Contact = () => {
           <p className="text-muted-foreground">
             © 2024 Webdo Agency. Your trusted eCommerce partner for growth.
           </p>
+          <p className="text-sm text-muted-foreground mt-2">
+            A brand by Anexio Group
+          </p>
         </div>
       </div>
     </section>

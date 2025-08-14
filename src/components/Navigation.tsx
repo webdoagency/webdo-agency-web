@@ -49,7 +49,7 @@ const Navigation = () => {
             <img 
               src="/webdo-logo.png" 
               alt="Webdo Agency" 
-              className="h-8 w-auto filter brightness-0 invert"
+              className="h-8 w-auto"
             />
           </div>
 

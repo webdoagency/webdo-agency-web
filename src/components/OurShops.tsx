@@ -1,3 +1,4 @@
+
 import { Button } from "./ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
@@ -55,7 +56,7 @@ const OurShops = () => {
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex items-center gap-4">
                       <img 
-                        src="/ballers-logo.png" 
+                        src="/lovable-uploads/10e53572-e63d-4454-939c-4eff0b23541a.png" 
                         alt="Ballers Logo" 
                         className="h-12 w-auto"
                       />

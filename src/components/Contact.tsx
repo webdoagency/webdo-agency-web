@@ -241,9 +241,6 @@ const Contact = () => {
           <p className="text-sm text-muted-foreground mt-2">
             A brand by Anexio Group
           </p>
-          <p className="text-sm text-muted-foreground mt-1 font-medium">
-            MADE IN KOSOVO
-          </p>
         </div>
       </div>
     </section>

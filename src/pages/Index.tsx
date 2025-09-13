@@ -10,10 +10,18 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       <Hero />
-      <ForClients />
-      <ForFreelancers />
-      <OurShops />
-      <Contact />
+      <div className="py-32">
+        <ForClients />
+      </div>
+      <div className="py-32">
+        <ForFreelancers />
+      </div>
+      <div className="py-32">
+        <OurShops />
+      </div>
+      <div className="py-24">
+        <Contact />
+      </div>
     </div>
   );
 };

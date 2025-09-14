@@ -93,7 +93,7 @@ const Footer = () => {
               </div>
               <div className="pt-2">
                 <a
-                  href="https://wa.me/38348878222"
+                  href="https://wa.me/message/6AUJBYONSU2HK1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-accent hover:text-accent-hover transition-colors"

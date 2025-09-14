@@ -121,7 +121,7 @@ const Contact = () => {
                   </a>
                 </Button>
                 <Button variant="outline" className="w-full justify-start" asChild>
-                  <a href="https://wa.me/38348878222" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/message/6AUJBYONSU2HK1" target="_blank" rel="noopener noreferrer">
                     <MessageCircle className="w-4 h-4 mr-2" />
                     WhatsApp Chat
                   </a>

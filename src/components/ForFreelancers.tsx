@@ -126,7 +126,7 @@ const ForFreelancers = () => {
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="w-full" asChild>
-                <a href="https://wa.me/38348878222" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/message/6AUJBYONSU2HK1" target="_blank" rel="noopener noreferrer">
                   WhatsApp Direct
                 </a>
               </Button>

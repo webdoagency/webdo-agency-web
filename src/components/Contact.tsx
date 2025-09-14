@@ -229,9 +229,11 @@ const Contact = () => {
                     />
                   </div>
 
-                  <Button type="submit" variant="hero" size="lg" className="w-full group">
-                    Send Message
-                    <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  <Button variant="hero" size="lg" className="w-full group" asChild>
+                    <a href="mailto:contact@anexiogroup.com?subject=Project Inquiry&body=Hello, I'm interested in starting a project with Anexio Group.">
+                      Send Message
+                      <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </a>
                   </Button>
                 </form>
               </CardContent>

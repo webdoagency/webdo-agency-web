@@ -24,27 +24,27 @@ const ForFreelancers = () => {
   const opportunities = [
     {
       icon: Code,
-      title: "Development Partners",
-      description: "Join our network of skilled developers working on cutting-edge eCommerce projects.",
-      skills: ["React", "Node.js", "Shopify", "WooCommerce"]
+      title: "Shopify & Development Experts",
+      description: "We're actively seeking Shopify specialists and skilled developers for premium eCommerce projects.",
+      skills: ["Shopify Plus", "Liquid", "React", "Node.js"]
     },
     {
       icon: Palette,
-      title: "Design Collaborators",
-      description: "Create stunning, conversion-focused designs for our client stores.",
-      skills: ["UI/UX", "Figma", "Branding", "Conversion Optimization"]
+      title: "Creative Design Professionals",
+      description: "Looking for talented designers and photographers who understand product selling and brand storytelling.",
+      skills: ["Product Photography", "UI/UX", "Brand Design", "Visual Merchandising"]
     },
     {
       icon: TrendingUp,
-      title: "Marketing Specialists",
-      description: "Drive growth and revenue for our partner stores through strategic marketing.",
-      skills: ["Google Ads", "Facebook Ads", "SEO", "Email Marketing"]
+      title: "AI & Marketing Specialists",
+      description: "Join our team of AI-savvy marketers driving exceptional results for eCommerce brands.",
+      skills: ["AI Tools", "Performance Marketing", "Data Analytics", "Conversion Optimization"]
     },
     {
       icon: Globe,
-      title: "Strategic Consultants",
-      description: "Help clients develop winning eCommerce strategies and optimize their operations.",
-      skills: ["Strategy", "Analytics", "Market Research", "Business Development"]
+      title: "Strategic Product Consultants",
+      description: "Help brands develop winning product strategies and optimize their selling operations.",
+      skills: ["Product Strategy", "Market Research", "Sales Optimization", "Business Intelligence"]
     }
   ];
 
@@ -81,7 +81,8 @@ const ForFreelancers = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Partner with Webdo Agency and work on exciting eCommerce projects. 
-            We're always looking for talented freelancers and agencies to collaborate with.
+            We're especially seeking talented professionals with Shopify expertise, product selling experience, 
+            AI specialists, creative designers, and photographers. Join our network of skilled collaborators.
           </p>
         </div>
 

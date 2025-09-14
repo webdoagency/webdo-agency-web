@@ -86,22 +86,22 @@ const ForFreelancers = () => {
         </div>
 
         {/* Opportunities */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-6 mb-16">
           {opportunities.map((opportunity, index) => (
-            <Card key={index} className="glass border-white/10 hover-lift">
-              <CardHeader>
-                <div className="flex items-center gap-4 mb-2">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
-                    <opportunity.icon className="w-6 h-6 text-primary-foreground" />
+            <Card key={index} className="glass-blurred card-3d p-4 h-40">
+              <CardContent className="p-0">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                    <opportunity.icon className="w-5 h-5 text-primary-foreground" />
                   </div>
-                  <CardTitle className="text-xl">{opportunity.title}</CardTitle>
+                  <div>
+                    <h3 className="font-semibold text-sm mb-1">{opportunity.title}</h3>
+                    <p className="text-muted-foreground text-xs leading-tight">{opportunity.description}</p>
+                  </div>
                 </div>
-                <p className="text-muted-foreground">{opportunity.description}</p>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  {opportunity.skills.map((skill, idx) => (
-                    <Badge key={idx} variant="secondary" className="bg-accent/20 text-accent">
+                <div className="flex flex-wrap gap-1">
+                  {opportunity.skills.slice(0, 3).map((skill, idx) => (
+                    <Badge key={idx} variant="secondary" className="bg-accent/20 text-accent text-xs px-2 py-0">
                       {skill}
                     </Badge>
                   ))}
@@ -111,117 +111,26 @@ const ForFreelancers = () => {
           ))}
         </div>
 
-        {/* Application Form */}
-        <div className="max-w-4xl mx-auto">
-          <Card className="shadow-card border-border/50">
-            <CardHeader>
-              <CardTitle className="text-2xl text-center">
-                Apply to Join Our Network
-              </CardTitle>
-              <p className="text-center text-muted-foreground">
-                Tell us about yourself and let's explore how we can work together
-              </p>
-            </CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="name">Full Name *</Label>
-                    <Input
-                      id="name"
-                      value={formData.name}
-                      onChange={(e) => handleInputChange("name", e.target.value)}
-                      placeholder="Your full name"
-                      required
-                      className="bg-input border-border focus:border-accent transition-colors"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email Address *</Label>
-                    <Input
-                      id="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={(e) => handleInputChange("email", e.target.value)}
-                      placeholder="your@email.com"
-                      required
-                      className="bg-input border-border focus:border-accent transition-colors"
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="experience">Experience Level</Label>
-                  <Select value={formData.experience} onValueChange={(value) => handleInputChange("experience", value)}>
-                    <SelectTrigger className="bg-input border-border focus:border-accent">
-                      <SelectValue placeholder="Select your experience level" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="junior">Junior (1-2 years)</SelectItem>
-                      <SelectItem value="mid">Mid-level (3-5 years)</SelectItem>
-                      <SelectItem value="senior">Senior (5+ years)</SelectItem>
-                      <SelectItem value="expert">Expert (10+ years)</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="skills">Primary Skills & Expertise</Label>
-                  <Input
-                    id="skills"
-                    value={formData.skills}
-                    onChange={(e) => handleInputChange("skills", e.target.value)}
-                    placeholder="e.g., React, UI/UX Design, Google Ads, Shopify..."
-                    className="bg-input border-border focus:border-accent transition-colors"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="portfolio">Portfolio/Website URL</Label>
-                  <Input
-                    id="portfolio"
-                    type="url"
-                    value={formData.portfolio}
-                    onChange={(e) => handleInputChange("portfolio", e.target.value)}
-                    placeholder="https://yourportfolio.com"
-                    className="bg-input border-border focus:border-accent transition-colors"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="message">Tell Us About Yourself</Label>
-                  <Textarea
-                    id="message"
-                    value={formData.message}
-                    onChange={(e) => handleInputChange("message", e.target.value)}
-                    placeholder="What makes you unique? What kind of projects excite you? Any relevant experience with eCommerce?"
-                    className="bg-input border-border focus:border-accent transition-colors min-h-[120px]"
-                  />
-                </div>
-
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button type="submit" variant="hero" size="lg" className="group">
-                    Submit Application
-                    <MessageCircle className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                  </Button>
-                  <Button type="button" variant="outline" size="lg">
-                    <a href="mailto:contact@webdoagency.com" className="flex items-center gap-2">
-                      Email Us Directly
-                    </a>
-                  </Button>
-                </div>
-              </form>
-            </CardContent>
-          </Card>
-
-          {/* Contact Info */}
-          <div className="text-center mt-8">
-            <p className="text-muted-foreground">
-              Questions? Reach out to us at{" "}
-              <a href="mailto:contact@webdoagency.com" className="text-accent hover:text-accent-hover transition-colors">
-                contact@webdoagency.com
-              </a>
+        {/* Contact Actions */}
+        <div className="text-center">
+          <div className="glass-blurred rounded-2xl p-8 max-w-md mx-auto">
+            <h3 className="text-xl font-bold mb-4">Join Our Network</h3>
+            <p className="text-muted-foreground mb-6 text-sm">
+              Ready to work on exciting projects?
             </p>
+            <div className="space-y-3">
+              <Button variant="hero" size="lg" className="w-full" asChild>
+                <a href="mailto:talent@webdoagency.com">
+                  <MessageCircle className="w-4 h-4 mr-2" />
+                  talent@webdoagency.com
+                </a>
+              </Button>
+              <Button variant="outline" size="lg" className="w-full" asChild>
+                <a href="https://wa.me/38348878222" target="_blank" rel="noopener noreferrer">
+                  WhatsApp Direct
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </div>

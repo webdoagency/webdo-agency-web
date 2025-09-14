@@ -89,54 +89,23 @@ const ForClients = () => {
           </p>
         </div>
 
-        {/* Business Models */}
-        <div className="grid md:grid-cols-2 gap-8 mb-20">
-          {models.map((model, index) => (
-            <Card key={index} className="shadow-card hover-lift border-border/50 relative overflow-hidden">
-              <div className="absolute top-4 right-4">
-                <span className="px-3 py-1 bg-accent text-accent-foreground text-xs font-semibold rounded-full">
-                  {model.highlight}
-                </span>
-              </div>
-              <CardHeader className="pb-4">
-                <CardTitle className="text-xl mb-2">{model.title}</CardTitle>
-                <p className="text-muted-foreground">{model.subtitle}</p>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 mb-6">
-                  {model.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-accent rounded-full flex-shrink-0"></div>
-                      <span className="text-muted-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Button 
-                  variant={index === 0 ? "accent" : "default"} 
-                  className="w-full"
-                  onClick={scrollToContact}
-                >
-                  {model.cta}
-                </Button>
+        {/* Benefits Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {benefits.map((benefit, index) => (
+            <Card key={index} className="glass-blurred card-3d p-4 h-32">
+              <CardContent className="p-0 flex items-center gap-3">
+                <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                  <benefit.icon className="w-5 h-5 text-primary-foreground" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-sm mb-1">{benefit.title}</h3>
+                  <p className="text-muted-foreground text-xs leading-tight">{benefit.description}</p>
+                </div>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        {/* Benefits Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {benefits.map((benefit, index) => (
-            <Card key={index} className="glass border-white/10 hover-lift">
-              <CardContent className="p-6">
-                <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-4">
-                  <benefit.icon className="w-6 h-6 text-primary-foreground" />
-                </div>
-                <h3 className="text-lg font-semibold mb-2">{benefit.title}</h3>
-                <p className="text-muted-foreground text-sm">{benefit.description}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
 
         {/* CTA Section */}
         <div className="text-center mt-16">

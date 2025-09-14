@@ -5,7 +5,7 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
-import { Mail, Phone, MapPin, Send, MessageCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Send, MessageCircle, Users } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -24,8 +24,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "contact@webdoagency.com",
-      href: "mailto:contact@webdoagency.com"
+      value: "contact@anexiogroup.com",
+      href: "mailto:contact@anexiogroup.com"
     },
     {
       icon: Phone,
@@ -67,13 +67,13 @@ const Contact = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-            Let's{" "}
+            Ready to{" "}
             <span className="bg-gradient-accent bg-clip-text text-transparent">
-              Start Building
+              Launch?
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to launch your eCommerce success story? Get in touch and let's discuss how we can help grow your business.
+            Get your eCommerce store up and running. Let's talk!
           </p>
         </div>
 
@@ -115,7 +115,7 @@ const Contact = () => {
               <h4 className="font-semibold">Quick Actions</h4>
               <div className="space-y-3">
                 <Button variant="outline" className="w-full justify-start" asChild>
-                  <a href="mailto:contact@webdoagency.com">
+                  <a href="mailto:contact@anexiogroup.com">
                     <Mail className="w-4 h-4 mr-2" />
                     Send Email
                   </a>
@@ -124,6 +124,12 @@ const Contact = () => {
                   <a href="https://wa.me/38348878222" target="_blank" rel="noopener noreferrer">
                     <MessageCircle className="w-4 h-4 mr-2" />
                     WhatsApp Chat
+                  </a>
+                </Button>
+                <Button variant="outline" className="w-full justify-start" asChild>
+                  <a href="mailto:partners@webdoagency.com">
+                    <Users className="w-4 h-4 mr-2" />
+                    Partner Email
                   </a>
                 </Button>
               </div>
@@ -233,15 +239,6 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="text-center mt-16 pt-8 border-t border-border">
-          <p className="text-muted-foreground">
-            © 2024 Webdo Agency. Your trusted eCommerce partner for growth.
-          </p>
-          <p className="text-sm text-muted-foreground mt-2">
-            A brand by Anexio Group
-          </p>
-        </div>
       </div>
     </section>
   );

@@ -30,16 +30,15 @@ const Hero = () => {
           {/* Content */}
           <div className="text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Your{" "}
+              Build Your{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                eCommerce Partner
+                Dream Store
               </span>{" "}
-              for Growth
+              Today
             </h1>
             
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
-              We create and manage online shops for our clients, from design to launch to ongoing growth. 
-              Partner with us to build your digital empire.
+              Professional eCommerce solutions. Low startup costs. Partnership-based growth.
             </p>
 
             {/* Key Benefits */}

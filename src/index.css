@@ -170,4 +170,18 @@
     @apply backdrop-blur-xl border border-white/10;
     background: rgba(255, 255, 255, 0.05);
   }
+  
+  .glass-blurred {
+    @apply backdrop-blur-2xl bg-background/80 border border-white/10;
+  }
+  
+  /* 3D Card Effects */
+  .card-3d {
+    @apply transition-all duration-300 hover:shadow-premium;
+    transform: perspective(1000px);
+  }
+  
+  .card-3d:hover {
+    transform: perspective(1000px) rotateX(2deg) rotateY(2deg) translateY(-4px);
+  }
 }

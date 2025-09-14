@@ -47,106 +47,55 @@ const OurShops = () => {
         </div>
 
         {/* Featured Shops */}
-        <div className="space-y-12">
-          {shops.map((shop, index) => (
-            <Card key={index} className="shadow-card hover-lift border-border/50 overflow-hidden">
-              <div className="grid lg:grid-cols-2 gap-8">
-                {/* Content */}
-                  <div className="p-8 lg:p-12">
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="flex items-center gap-4">
-                      <img 
-                        src="/lovable-uploads/10e53572-e63d-4454-939c-4eff0b23541a.png" 
-                        alt="Ballers Logo" 
-                        className="h-12 w-auto"
-                      />
-                      <div>
-                        <h3 className="text-2xl font-bold mb-2">{shop.name}</h3>
-                        <Badge variant="secondary" className="bg-accent/20 text-accent">
-                          {shop.category}
-                        </Badge>
-                      </div>
-                    </div>
-                    <Button variant="outline" size="sm" asChild>
-                      <a href={`https://${shop.url}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                        Visit Store
-                        <ExternalLink className="w-4 h-4" />
-                      </a>
-                    </Button>
-                  </div>
-
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
-                    {shop.description}
-                  </p>
-
-                  {/* Highlights */}
-                  <div className="mb-6">
-                    <h4 className="font-semibold mb-3">Key Features:</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {shop.highlights.map((highlight, idx) => (
-                        <Badge key={idx} variant="outline" className="border-accent/50 text-accent">
-                          {highlight}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Stats */}
-                  <div className="grid grid-cols-3 gap-4">
-                    {shop.stats.map((stat, idx) => (
-                      <div key={idx} className="text-center p-3 glass rounded-lg">
-                        <stat.icon className="w-5 h-5 text-accent mx-auto mb-1" />
-                        <div className="font-bold text-lg">{stat.value}</div>
-                        <div className="text-xs text-muted-foreground">{stat.label}</div>
-                      </div>
-                    ))}
+        <div className="max-w-4xl mx-auto">
+          <Card className="glass-blurred card-3d overflow-hidden">
+            <div className="p-6">
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center gap-3">
+                  <img 
+                    src="/lovable-uploads/10e53572-e63d-4454-939c-4eff0b23541a.png" 
+                    alt="Ballers Logo" 
+                    className="h-8 w-auto"
+                  />
+                  <div>
+                    <h3 className="text-lg font-bold">Ballers</h3>
+                    <Badge variant="secondary" className="bg-accent/20 text-accent text-xs">
+                      Fashion & Lifestyle
+                    </Badge>
                   </div>
                 </div>
+                <Button variant="outline" size="sm" asChild>
+                  <a href="https://theballersstore.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                    Visit Store
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
+                </Button>
+              </div>
 
-                {/* Visual */}
-                <div className="p-8 lg:p-12 flex items-center justify-center bg-gradient-to-br from-card to-muted/20">
-                  <div className="relative">
-                    {/* Mock Browser Window */}
-                    <div className="w-80 bg-card rounded-lg shadow-premium border border-border overflow-hidden">
-                      {/* Browser Header */}
-                      <div className="h-8 bg-muted flex items-center px-3 gap-2">
-                        <div className="flex gap-1">
-                          <div className="w-2 h-2 bg-destructive rounded-full"></div>
-                          <div className="w-2 h-2 bg-warning rounded-full"></div>
-                          <div className="w-2 h-2 bg-success rounded-full"></div>
-                        </div>
-                        <div className="flex-1 bg-input rounded text-xs text-center py-1 text-muted-foreground">
-                          {shop.url}
-                        </div>
-                      </div>
-                      
-                      {/* Content Preview */}
-                      <div className="p-4 space-y-3">
-                        <div className="h-24 bg-gradient-primary rounded opacity-80"></div>
-                        <div className="space-y-2">
-                          <div className="h-3 bg-muted rounded w-3/4"></div>
-                          <div className="h-3 bg-muted rounded w-1/2"></div>
-                        </div>
-                        <div className="grid grid-cols-2 gap-2">
-                          <div className="h-16 bg-muted rounded"></div>
-                          <div className="h-16 bg-muted rounded"></div>
-                        </div>
-                        <div className="h-8 bg-accent rounded"></div>
-                      </div>
-                    </div>
+              <p className="text-muted-foreground text-sm mb-4">
+                Premium streetwear and athletic apparel for the modern athlete.
+              </p>
 
-                    {/* Floating Elements */}
-                    <div className="absolute -top-4 -right-4 w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center animate-[float_3s_ease-in-out_infinite]">
-                      <ShoppingCart className="w-6 h-6 text-accent" />
-                    </div>
-                    <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center animate-[float_3s_ease-in-out_infinite_1.5s]">
-                      <TrendingUp className="w-4 h-4 text-primary" />
-                    </div>
-                  </div>
+              {/* Stats */}
+              <div className="grid grid-cols-3 gap-3">
+                <div className="text-center p-2 glass rounded-lg">
+                  <ShoppingCart className="w-4 h-4 text-accent mx-auto mb-1" />
+                  <div className="font-bold text-sm">50+</div>
+                  <div className="text-xs text-muted-foreground">Categories</div>
+                </div>
+                <div className="text-center p-2 glass rounded-lg">
+                  <Users className="w-4 h-4 text-accent mx-auto mb-1" />
+                  <div className="font-bold text-sm">2K+</div>
+                  <div className="text-xs text-muted-foreground">Customers</div>
+                </div>
+                <div className="text-center p-2 glass rounded-lg">
+                  <TrendingUp className="w-4 h-4 text-accent mx-auto mb-1" />
+                  <div className="font-bold text-sm">150%</div>
+                  <div className="text-xs text-muted-foreground">Growth</div>
                 </div>
               </div>
-            </Card>
-          ))}
+            </div>
+          </Card>
         </div>
 
         {/* Technical Features */}

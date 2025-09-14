@@ -4,6 +4,7 @@ import ForClients from "@/components/ForClients";
 import ForFreelancers from "@/components/ForFreelancers";
 import OurShops from "@/components/OurShops";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
       <div className="py-24">
         <Contact />
       </div>
+      <Footer />
     </div>
   );
 };

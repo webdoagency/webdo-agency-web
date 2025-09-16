@@ -41,7 +41,7 @@ const OurShops = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We don't just build stores for clients – we run our own successful eCommerce businesses. 
+            We don't just build stores for businesses – we run our own successful eCommerce businesses. 
             This gives us real-world insights into what actually drives sales and growth.
           </p>
         </div>

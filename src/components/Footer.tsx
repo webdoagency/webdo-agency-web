@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
   const quickLinks = [
-    { label: "For Clients", href: "#clients" },
+    { label: "For Businesses", href: "#businesses" },
     { label: "For Freelancers", href: "#freelancers" },
     { label: "Our Shops", href: "#shops" },
     { label: "Contact", href: "#contact" }

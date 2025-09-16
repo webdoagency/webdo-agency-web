@@ -9,9 +9,7 @@ const Footer = () => {
   ];
 
   const contactEmails = [
-    { label: "General", email: "contact@anexiogroup.com" },
-    { label: "Partners", email: "partners@webdoagency.com" },
-    { label: "Talent", email: "talent@webdoagency.com" }
+    { label: "Contact", email: "contact@webdoagency.com" }
   ];
 
   const scrollToSection = (sectionId: string) => {

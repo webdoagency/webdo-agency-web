@@ -24,8 +24,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "contact@anexiogroup.com",
-      href: "mailto:contact@anexiogroup.com"
+      value: "contact@webdoagency.com",
+      href: "mailto:contact@webdoagency.com"
     },
     {
       icon: Phone,
@@ -115,7 +115,7 @@ const Contact = () => {
               <h4 className="font-semibold">Quick Actions</h4>
               <div className="space-y-3">
                 <Button variant="outline" className="w-full justify-start" asChild>
-                  <a href="mailto:contact@anexiogroup.com">
+                  <a href="mailto:contact@webdoagency.com">
                     <Mail className="w-4 h-4 mr-2" />
                     Send Email
                   </a>
@@ -127,9 +127,9 @@ const Contact = () => {
                   </a>
                 </Button>
                 <Button variant="outline" className="w-full justify-start" asChild>
-                  <a href="mailto:partners@webdoagency.com">
+                  <a href="mailto:contact@webdoagency.com">
                     <Users className="w-4 h-4 mr-2" />
-                    Partner Email
+                    Contact Email
                   </a>
                 </Button>
               </div>
@@ -230,7 +230,7 @@ const Contact = () => {
                   </div>
 
                   <Button variant="hero" size="lg" className="w-full group" asChild>
-                    <a href="mailto:contact@anexiogroup.com?subject=Project Inquiry&body=Hello, I'm interested in starting a project with Anexio Group.">
+                    <a href="mailto:contact@webdoagency.com?subject=Project Inquiry&body=Hello, I'm interested in starting a project with Webdo Agency.">
                       Send Message
                       <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </a>

@@ -121,9 +121,9 @@ const ForFreelancers = () => {
             </p>
             <div className="space-y-3">
               <Button variant="hero" size="lg" className="w-full" asChild>
-                <a href="mailto:talent@webdoagency.com">
+                <a href="mailto:contact@webdoagency.com">
                   <MessageCircle className="w-4 h-4 mr-2" />
-                  talent@webdoagency.com
+                  contact@webdoagency.com
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="w-full" asChild>

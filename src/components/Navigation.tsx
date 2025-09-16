@@ -41,7 +41,7 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 glass-blurred backdrop-blur-xl bg-background/20 shadow-lg">
+    <nav className="fixed top-0 left-0 right-0 z-50 glass-silver backdrop-blur-xl shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -63,7 +63,7 @@ const Navigation = () => {
                   onClick={() => scrollToSection(item.id)}
                   className={`px-3 py-2 text-sm font-medium transition-all duration-300 hover:text-accent ${
                     activeSection === item.id
-                      ? "text-accent border-b-2 border-accent"
+                      ? "text-accent"
                       : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
@@ -99,7 +99,7 @@ const Navigation = () => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden glass border-t border-white/10">
+        <div className="md:hidden glass-silver">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navItems.map((item) => (
               <button

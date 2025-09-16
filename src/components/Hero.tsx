@@ -37,9 +37,6 @@ const Hero = () => {
               Today
             </h1>
             
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
-              Professional eCommerce solutions. Low startup costs. Partnership-based growth.
-            </p>
 
             {/* Key Benefits */}
             <div className="space-y-3 mb-8">

@@ -9,18 +9,18 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary-hover shadow-minimal hover:shadow-card",
+        default: "glass-morphism text-foreground hover:shadow-glow hover:-translate-y-1",
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-minimal",
+          "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-liquid",
         outline:
-          "border border-border bg-background hover:bg-accent hover:text-accent-foreground shadow-minimal",
+          "glass border-white/30 text-foreground hover:shadow-liquid hover:-translate-y-1",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-minimal",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-primary text-primary-foreground hover:bg-primary-hover shadow-card hover:shadow-floating hover:-translate-y-1",
-        accent: "bg-accent text-accent-foreground hover:bg-accent-hover shadow-minimal",
-        glass: "glass text-foreground hover:bg-white/80",
+          "glass-blurred text-foreground hover:shadow-card hover:-translate-y-1",
+        ghost: "hover:glass-morphism hover:text-accent-foreground transition-all duration-300",
+        link: "text-accent underline-offset-4 hover:underline hover:text-accent-hover",
+        hero: "glass-morphism text-foreground border-accent/30 hover:shadow-glow hover:-translate-y-1 hover:border-accent/50",
+        accent: "bg-accent text-accent-foreground hover:bg-accent-hover hover:shadow-liquid hover:-translate-y-1",
+        glass: "glass text-foreground hover:bg-white/10 border-white/20",
       },
       size: {
         default: "h-10 px-4 py-2",

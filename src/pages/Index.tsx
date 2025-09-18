@@ -5,6 +5,7 @@ import ForFreelancers from "@/components/ForFreelancers";
 import OurShops from "@/components/OurShops";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import DeviceMockups from "@/components/DeviceMockups";
 
 const Index = () => {
   return (
@@ -26,6 +27,22 @@ const Index = () => {
           </p>
         </div>
         <ForClients />
+      </div>
+      
+      {/* Device Showcase Section */}
+      <div className="py-32 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-20">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+            Our{" "}
+            <span className="bg-gradient-accent bg-clip-text text-transparent">
+              Portfolio
+            </span>
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            Experience our work through these interactive showcases. Every design is optimized for both desktop and mobile.
+          </p>
+        </div>
+        <DeviceMockups />
       </div>
       <div className="py-32">
         <ForFreelancers />

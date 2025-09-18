@@ -13,16 +13,17 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center relative overflow-hidden"
+      className="min-h-screen flex items-center relative overflow-hidden liquid-flow"
     >
-      {/* Background Image with Overlay */}
+      {/* Liquid Glass Background */}
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
           alt="eCommerce Growth"
-          className="w-full h-full object-cover opacity-20"
+          className="w-full h-full object-cover opacity-10"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-background via-background/95 to-background/80" />
+        <div className="absolute inset-0 bg-gradient-liquid opacity-40" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -75,25 +76,25 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Visual Element */}
+          {/* 3D Visual Element */}
           <div className="hidden lg:block relative">
             <div className="relative">
-              {/* Floating Cards */}
-              <div className="absolute -top-8 -left-8 w-32 h-32 glass rounded-2xl p-4 animate-[float_3s_ease-in-out_infinite]">
-                <div className="w-full h-full bg-gradient-accent rounded-lg flex items-center justify-center text-accent-foreground font-bold text-sm">
+              {/* Floating 3D Cards */}
+              <div className="absolute -top-8 -left-8 w-32 h-32 glass-morphism rounded-3xl p-4 animate-float liquid-3d">
+                <div className="w-full h-full bg-gradient-accent rounded-2xl flex items-center justify-center text-accent-foreground font-bold text-sm shadow-liquid">
                   Growth
                 </div>
               </div>
               
-              <div className="absolute -bottom-8 -right-8 w-24 h-24 glass rounded-2xl p-3 animate-[float_3s_ease-in-out_infinite_1.5s]">
-                <div className="w-full h-full bg-gradient-primary rounded-lg flex items-center justify-center text-primary-foreground font-bold text-xs">
+              <div className="absolute -bottom-8 -right-8 w-24 h-24 glass-morphism rounded-3xl p-3 animate-[float_6s_ease-in-out_infinite_2s] liquid-3d">
+                <div className="w-full h-full bg-gradient-primary rounded-2xl flex items-center justify-center text-primary-foreground font-bold text-xs shadow-liquid">
                   Sales
                 </div>
               </div>
 
-              <div className="w-80 h-80 glass rounded-3xl p-8 flex items-center justify-center">
+              <div className="w-80 h-80 glass-morphism rounded-[3rem] p-8 flex items-center justify-center card-3d shadow-3d">
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-primary rounded-2xl mx-auto mb-4 flex items-center justify-center">
+                  <div className="w-16 h-16 bg-gradient-primary rounded-3xl mx-auto mb-4 flex items-center justify-center shadow-liquid">
                     <CheckCircle className="w-8 h-8 text-primary-foreground" />
                   </div>
                   <h3 className="text-lg font-semibold mb-2">Ready to Launch</h3>

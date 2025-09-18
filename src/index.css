@@ -2,81 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Webdo Agency Design System - Premium Dark Theme */
+/* Webdo Agency Design System - Liquid Glass Theme */
 
 @layer base {
   :root {
-    /* Premium Dark Theme */
-    --background: 215 28% 8%;
-    --foreground: 210 20% 98%;
+    /* Liquid Glass Dark Theme */
+    --background: 220 27% 4%;
+    --foreground: 220 10% 95%;
 
-    --card: 217 30% 10%;
-    --card-foreground: 210 20% 98%;
+    --card: 220 25% 8%;
+    --card-foreground: 220 10% 95%;
 
-    --popover: 217 30% 10%;
-    --popover-foreground: 210 20% 98%;
+    --popover: 220 25% 8%;
+    --popover-foreground: 220 10% 95%;
 
-    /* Primary - Deep Blue Gradient */
-    --primary: 243 75% 59%;
-    --primary-foreground: 210 20% 98%;
-    --primary-hover: 243 75% 65%;
+    /* Primary - Liquid Chrome */
+    --primary: 220 25% 85%;
+    --primary-foreground: 220 27% 8%;
+    --primary-hover: 220 25% 90%;
 
-    /* Secondary - Soft Charcoal */
-    --secondary: 217 25% 15%;
-    --secondary-foreground: 210 20% 98%;
+    /* Secondary - Glass Tint */
+    --secondary: 220 25% 12%;
+    --secondary-foreground: 220 10% 95%;
 
     /* Muted */
-    --muted: 217 25% 12%;
-    --muted-foreground: 215 15% 70%;
+    --muted: 220 25% 10%;
+    --muted-foreground: 220 10% 70%;
 
-    /* Accent - Teal/Green */
-    --accent: 175 85% 55%;
-    --accent-foreground: 215 28% 8%;
-    --accent-hover: 175 85% 62%;
+    /* Accent - Liquid Cyan */
+    --accent: 190 85% 60%;
+    --accent-foreground: 220 27% 8%;
+    --accent-hover: 190 85% 65%;
 
     /* Success/Growth */
-    --success: 142 76% 36%;
-    --success-foreground: 210 20% 98%;
+    --success: 140 80% 55%;
+    --success-foreground: 220 27% 8%;
 
     /* Warning */
-    --warning: 38 92% 50%;
-    --warning-foreground: 215 28% 8%;
+    --warning: 45 95% 60%;
+    --warning-foreground: 220 27% 8%;
 
     /* Destructive */
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 20% 98%;
+    --destructive: 0 85% 65%;
+    --destructive-foreground: 220 10% 95%;
 
     /* Borders and Inputs */
-    --border: 217 25% 20%;
-    --input: 217 25% 18%;
-    --ring: 243 75% 59%;
+    --border: 220 25% 15%;
+    --input: 220 25% 12%;
+    --ring: 190 85% 60%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(243 75% 59%), hsl(261 75% 65%));
-    --gradient-accent: linear-gradient(135deg, hsl(175 85% 55%), hsl(142 76% 45%));
-    --gradient-hero: linear-gradient(135deg, hsl(243 75% 59%) 0%, hsl(261 75% 65%) 50%, hsl(175 85% 55%) 100%);
+    /* Liquid Glass Gradients */
+    --gradient-primary: linear-gradient(135deg, 
+      rgba(220, 220, 220, 0.9) 0%, 
+      rgba(190, 210, 240, 0.8) 50%, 
+      rgba(170, 200, 250, 0.7) 100%);
+    --gradient-accent: linear-gradient(135deg, 
+      rgba(0, 200, 255, 0.8) 0%, 
+      rgba(100, 255, 200, 0.6) 100%);
+    --gradient-hero: linear-gradient(135deg, 
+      rgba(220, 220, 220, 0.95) 0%, 
+      rgba(190, 210, 240, 0.85) 30%, 
+      rgba(0, 200, 255, 0.75) 70%, 
+      rgba(100, 255, 200, 0.65) 100%);
+    --gradient-glass: linear-gradient(135deg, 
+      rgba(255, 255, 255, 0.25) 0%, 
+      rgba(255, 255, 255, 0.1) 50%, 
+      rgba(255, 255, 255, 0.05) 100%);
+    --gradient-liquid: radial-gradient(circle at 30% 20%, 
+      rgba(0, 200, 255, 0.3) 0%, 
+      rgba(100, 255, 200, 0.2) 50%, 
+      transparent 100%);
     
-    /* Shadows */
-    --shadow-premium: 0 20px 40px -12px hsl(243 75% 59% / 0.25);
-    --shadow-card: 0 8px 32px -8px hsl(215 28% 4% / 0.5);
-    --shadow-glow: 0 0 40px hsl(243 75% 59% / 0.3);
+    /* Liquid Glass Shadows */
+    --shadow-premium: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+    --shadow-card: 0 15px 35px rgba(0, 0, 0, 0.4);
+    --shadow-glow: 0 0 60px rgba(0, 200, 255, 0.4);
+    --shadow-liquid: 0 8px 32px rgba(0, 200, 255, 0.3), 
+                     inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    --shadow-deep: 0 20px 60px rgba(0, 0, 0, 0.8);
+    --shadow-3d: 0 30px 60px rgba(0, 0, 0, 0.5), 
+                 0 15px 30px rgba(0, 0, 0, 0.3);
 
-    --radius: 0.5rem;
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -130,7 +145,7 @@
 }
 
 @layer components {
-  /* Premium Gradient Backgrounds */
+  /* Liquid Glass Gradient Backgrounds */
   .bg-gradient-primary {
     background: var(--gradient-primary);
   }
@@ -142,8 +157,16 @@
   .bg-gradient-hero {
     background: var(--gradient-hero);
   }
+  
+  .bg-gradient-glass {
+    background: var(--gradient-glass);
+  }
+  
+  .bg-gradient-liquid {
+    background: var(--gradient-liquid);
+  }
 
-  /* Premium Shadows */
+  /* Liquid Glass Shadows */
   .shadow-premium {
     box-shadow: var(--shadow-premium);
   }
@@ -155,44 +178,128 @@
   .shadow-glow {
     box-shadow: var(--shadow-glow);
   }
-
-  /* Hover Effects */
-  .hover-lift {
-    @apply transition-all duration-300 ease-out;
+  
+  .shadow-liquid {
+    box-shadow: var(--shadow-liquid);
   }
   
-  .hover-lift:hover {
-    @apply -translate-y-1 shadow-premium;
+  .shadow-deep {
+    box-shadow: var(--shadow-deep);
+  }
+  
+  .shadow-3d {
+    box-shadow: var(--shadow-3d);
   }
 
-  /* Glass Effect */
+  /* Liquid Glass Effects */
   .glass {
-    @apply backdrop-blur-xl border border-white/10;
-    background: rgba(255, 255, 255, 0.05);
+    @apply backdrop-blur-2xl border;
+    background: var(--gradient-glass);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: var(--shadow-liquid);
   }
   
   .glass-blurred {
-    @apply backdrop-blur-2xl bg-background/80 border border-white/10;
+    @apply backdrop-blur-3xl border;
+    background: linear-gradient(135deg, 
+      rgba(255, 255, 255, 0.15) 0%, 
+      rgba(255, 255, 255, 0.05) 100%);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: var(--shadow-card);
   }
   
   .glass-silver {
-    @apply backdrop-blur-2xl;
+    @apply backdrop-blur-3xl;
     background: linear-gradient(135deg, 
-      rgba(255, 255, 255, 0.12) 0%, 
-      rgba(255, 255, 255, 0.08) 50%, 
-      rgba(255, 255, 255, 0.06) 100%);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 
-                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+      rgba(255, 255, 255, 0.2) 0%, 
+      rgba(255, 255, 255, 0.1) 50%, 
+      rgba(255, 255, 255, 0.05) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: var(--shadow-liquid);
   }
   
-  /* 3D Card Effects */
+  .glass-morphism {
+    @apply backdrop-blur-2xl;
+    background: linear-gradient(135deg, 
+      rgba(255, 255, 255, 0.25) 0%, 
+      rgba(255, 255, 255, 0.1) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4), 
+                inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  }
+
+  /* 3D Effects */
   .card-3d {
-    @apply transition-all duration-300 hover:shadow-premium;
-    transform: perspective(1000px);
+    @apply transition-all duration-500 ease-out;
+    transform: perspective(1200px) translateZ(0);
+    transform-style: preserve-3d;
   }
   
   .card-3d:hover {
-    transform: perspective(1000px) rotateX(2deg) rotateY(2deg) translateY(-4px);
+    transform: perspective(1200px) rotateX(8deg) rotateY(8deg) translateZ(20px);
+    box-shadow: var(--shadow-3d);
+  }
+  
+  .liquid-3d {
+    @apply transition-all duration-700 ease-out;
+    transform: perspective(1500px) translateZ(0);
+    transform-style: preserve-3d;
+  }
+  
+  .liquid-3d:hover {
+    transform: perspective(1500px) rotateX(5deg) rotateY(10deg) translateY(-8px) translateZ(40px);
+    box-shadow: var(--shadow-deep);
+  }
+
+  /* Hover Effects */
+  .hover-lift {
+    @apply transition-all duration-400 ease-out;
+  }
+  
+  .hover-lift:hover {
+    @apply -translate-y-2 shadow-3d;
+  }
+  
+  .hover-glow {
+    @apply transition-all duration-300;
+  }
+  
+  .hover-glow:hover {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  /* Liquid Flow Animation */
+  .liquid-flow {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .liquid-flow::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: var(--gradient-liquid);
+    animation: liquid-rotate 20s linear infinite;
+    z-index: -1;
+  }
+  
+  @keyframes liquid-rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Device Mockups */
+  .device-mockup {
+    @apply glass-morphism liquid-3d;
+    border-radius: 2rem;
+    padding: 1.5rem;
+  }
+  
+  .device-screen {
+    @apply bg-background/90 rounded-xl overflow-hidden;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.3);
   }
 }

@@ -13,17 +13,16 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center relative overflow-hidden liquid-flow"
+      className="min-h-screen flex items-center relative overflow-hidden bg-gradient-subtle"
     >
-      {/* Liquid Glass Background */}
+      {/* Clean Background */}
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
           alt="eCommerce Growth"
-          className="w-full h-full object-cover opacity-10"
+          className="w-full h-full object-cover opacity-5"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background/95 to-background/80" />
-        <div className="absolute inset-0 bg-gradient-liquid opacity-40" />
+        <div className="absolute inset-0 bg-gradient-to-br from-background via-background/98 to-background/95" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -55,8 +54,8 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            {/* CTA Button */}
+            <div className="flex justify-center lg:justify-start">
               <Button
                 variant="hero"
                 size="lg"
@@ -66,35 +65,28 @@ const Hero = () => {
                 Start Your Store
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                onClick={() => scrollToSection("businesses")}
-              >
-                Learn More
-              </Button>
             </div>
           </div>
 
-          {/* 3D Visual Element */}
+          {/* Clean Visual Element */}
           <div className="hidden lg:block relative">
             <div className="relative">
-              {/* Floating 3D Cards */}
-              <div className="absolute -top-8 -left-8 w-32 h-32 glass-morphism rounded-3xl p-4 animate-float liquid-3d">
-                <div className="w-full h-full bg-gradient-accent rounded-2xl flex items-center justify-center text-accent-foreground font-bold text-sm shadow-liquid">
+              {/* Floating Clean Cards */}
+              <div className="absolute -top-8 -left-8 w-32 h-32 glass rounded-3xl p-4 animate-float card-floating">
+                <div className="w-full h-full bg-gradient-primary rounded-2xl flex items-center justify-center text-primary-foreground font-bold text-sm shadow-card">
                   Growth
                 </div>
               </div>
               
-              <div className="absolute -bottom-8 -right-8 w-24 h-24 glass-morphism rounded-3xl p-3 animate-[float_6s_ease-in-out_infinite_2s] liquid-3d">
-                <div className="w-full h-full bg-gradient-primary rounded-2xl flex items-center justify-center text-primary-foreground font-bold text-xs shadow-liquid">
+              <div className="absolute -bottom-8 -right-8 w-24 h-24 glass rounded-3xl p-3 animate-[float_6s_ease-in-out_infinite_2s] card-floating">
+                <div className="w-full h-full bg-gradient-accent rounded-2xl flex items-center justify-center text-accent-foreground font-bold text-xs shadow-card">
                   Sales
                 </div>
               </div>
 
-              <div className="w-80 h-80 glass-morphism rounded-[3rem] p-8 flex items-center justify-center card-3d shadow-3d">
+              <div className="w-80 h-80 glass rounded-[3rem] p-8 flex items-center justify-center card-floating shadow-floating">
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-primary rounded-3xl mx-auto mb-4 flex items-center justify-center shadow-liquid">
+                  <div className="w-16 h-16 bg-gradient-primary rounded-3xl mx-auto mb-4 flex items-center justify-center shadow-card">
                     <CheckCircle className="w-8 h-8 text-primary-foreground" />
                   </div>
                   <h3 className="text-lg font-semibold mb-2">Ready to Launch</h3>

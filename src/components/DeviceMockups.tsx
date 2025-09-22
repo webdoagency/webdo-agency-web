@@ -6,7 +6,8 @@ interface DeviceMockupsProps {
   websites?: {
     title: string;
     description: string;
-    image: string;
+    desktopImage: string;
+    mobileImage: string;
     url?: string;
   }[];
 }
@@ -18,17 +19,14 @@ const DeviceMockups = ({ websites = [] }: DeviceMockupsProps) => {
     {
       title: "Ballers - Sports Caps Store",
       description: "Premium sports caps and baseball hats with team collections",
-      image: "/showcase/ballers-preview.png",
+      desktopImage: "/showcase/ballers-preview.png",
+      mobileImage: "/showcase/gb-preview.png",
     },
     {
       title: "GB - Luxury Fashion",
       description: "High-end fashion boutique with elegant dress collections",
-      image: "/showcase/gb-preview.png",
-    },
-    {
-      title: "GB Mobile - Fashion Showcase",
-      description: "Mobile-optimized luxury fashion experience with product gallery",
-      image: "/showcase/gb-mobile-preview.png",
+      desktopImage: "/showcase/ballers-preview.png",
+      mobileImage: "/showcase/gb-mobile-preview.png",
     }
   ];
 
@@ -58,7 +56,7 @@ const DeviceMockups = ({ websites = [] }: DeviceMockupsProps) => {
               {/* Screen */}
               <div className="device-screen aspect-[16/10] relative">
                 <img 
-                  src={currentWebsite.image}
+                  src={currentWebsite.desktopImage}
                   alt={currentWebsite.title}
                   className="w-full h-full object-cover transition-all duration-500"
                 />
@@ -88,7 +86,7 @@ const DeviceMockups = ({ websites = [] }: DeviceMockupsProps) => {
               {/* Screen */}
               <div className="device-screen aspect-[9/19.5] relative">
                 <img 
-                  src={currentWebsite.image}
+                  src={currentWebsite.mobileImage}
                   alt={`${currentWebsite.title} Mobile`}
                   className="w-full h-full object-cover object-top transition-all duration-500"
                 />

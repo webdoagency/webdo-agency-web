@@ -80,18 +80,18 @@ const OurShops = () => {
               <div className="grid grid-cols-3 gap-3">
                 <div className="text-center p-2 neumorphic rounded-lg">
                   <ShoppingCart className="w-4 h-4 text-accent mx-auto mb-1" />
-                  <div className="font-bold text-sm">50+</div>
-                  <div className="text-xs text-muted-foreground">Categories</div>
+                  <div className="font-bold text-sm">100%</div>
+                  <div className="text-xs text-muted-foreground">Authentic</div>
                 </div>
                 <div className="text-center p-2 neumorphic rounded-lg">
                   <Users className="w-4 h-4 text-accent mx-auto mb-1" />
-                  <div className="font-bold text-sm">2K+</div>
-                  <div className="text-xs text-muted-foreground">Customers</div>
+                  <div className="font-bold text-sm">Premium</div>
+                  <div className="text-xs text-muted-foreground">Quality</div>
                 </div>
                 <div className="text-center p-2 neumorphic rounded-lg">
                   <TrendingUp className="w-4 h-4 text-accent mx-auto mb-1" />
-                  <div className="font-bold text-sm">150%</div>
-                  <div className="text-xs text-muted-foreground">Growth</div>
+                  <div className="font-bold text-sm">Original</div>
+                  <div className="text-xs text-muted-foreground">Brands</div>
                 </div>
               </div>
             </div>

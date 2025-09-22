@@ -16,19 +16,14 @@ const DeviceMockups = ({ websites = [] }: DeviceMockupsProps) => {
   
   const defaultWebsites = [
     {
-      title: "E-Commerce Store",
-      description: "Modern online shopping experience with seamless checkout",
-      image: "/placeholder.svg",
+      title: "Ballers - Sports Caps Store",
+      description: "Premium sports caps and baseball hats with team collections",
+      image: "/showcase/ballers-preview.png",
     },
     {
-      title: "Business Portfolio",
-      description: "Professional website showcasing services and expertise",
-      image: "/placeholder.svg",
-    },
-    {
-      title: "Restaurant Website",
-      description: "Appetizing design with online ordering capabilities",
-      image: "/placeholder.svg",
+      title: "GB - Luxury Fashion",
+      description: "High-end fashion boutique with elegant dress collections",
+      image: "/showcase/gb-preview.png",
     }
   ];
 

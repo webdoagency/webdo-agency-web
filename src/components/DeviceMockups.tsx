@@ -24,6 +24,11 @@ const DeviceMockups = ({ websites = [] }: DeviceMockupsProps) => {
       title: "GB - Luxury Fashion",
       description: "High-end fashion boutique with elegant dress collections",
       image: "/showcase/gb-preview.png",
+    },
+    {
+      title: "GB Mobile - Fashion Showcase",
+      description: "Mobile-optimized luxury fashion experience with product gallery",
+      image: "/showcase/gb-mobile-preview.png",
     }
   ];
 

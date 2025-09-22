@@ -58,7 +58,7 @@ const DeviceMockups = ({ websites = [] }: DeviceMockupsProps) => {
                 <img 
                   src={currentWebsite.desktopImage}
                   alt={currentWebsite.title}
-                  className="w-full h-full object-cover transition-all duration-500"
+                  className="w-full h-full object-contain p-2 transition-all duration-500"
                 />
                 {/* Screen Glow */}
                 <div className="absolute inset-0 bg-gradient-liquid opacity-20" />
@@ -88,7 +88,7 @@ const DeviceMockups = ({ websites = [] }: DeviceMockupsProps) => {
                 <img 
                   src={currentWebsite.mobileImage}
                   alt={`${currentWebsite.title} Mobile`}
-                  className="w-full h-full object-cover object-top transition-all duration-500"
+                  className="w-full h-full object-contain p-2 transition-all duration-500"
                 />
                 {/* Screen Glow */}
                 <div className="absolute inset-0 bg-gradient-liquid opacity-15" />

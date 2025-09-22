@@ -75,7 +75,7 @@ const ForFreelancers = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Join Our{" "}
-            <span className="bg-gradient-accent bg-clip-text text-transparent">
+            <span className="text-accent">
               Talent Network
             </span>
           </h2>
@@ -89,11 +89,11 @@ const ForFreelancers = () => {
         {/* Opportunities */}
         <div className="grid md:grid-cols-2 gap-6 mb-16">
           {opportunities.map((opportunity, index) => (
-            <Card key={index} className="glass-blurred card-3d p-4 h-40">
+            <Card key={index} className="neumorphic-soft neumorphic-3d p-4 h-40">
               <CardContent className="p-0">
                 <div className="flex items-start gap-3 mb-3">
-                  <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                    <opportunity.icon className="w-5 h-5 text-primary-foreground" />
+                  <div className="w-10 h-10 neumorphic rounded-lg flex items-center justify-center flex-shrink-0">
+                    <opportunity.icon className="w-5 h-5 text-accent" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-sm mb-1">{opportunity.title}</h3>
@@ -102,7 +102,7 @@ const ForFreelancers = () => {
                 </div>
                 <div className="flex flex-wrap gap-1">
                   {opportunity.skills.slice(0, 3).map((skill, idx) => (
-                    <Badge key={idx} variant="secondary" className="bg-accent/20 text-accent text-xs px-2 py-0">
+                    <Badge key={idx} variant="secondary" className="neumorphic-pressed text-accent text-xs px-2 py-0">
                       {skill}
                     </Badge>
                   ))}
@@ -114,7 +114,7 @@ const ForFreelancers = () => {
 
         {/* Contact Actions */}
         <div className="text-center">
-          <div className="glass-blurred rounded-2xl p-8 max-w-md mx-auto">
+          <div className="neumorphic-soft rounded-2xl p-8 max-w-md mx-auto">
             <h3 className="text-xl font-bold mb-4">Join Our Network</h3>
             <p className="text-muted-foreground mb-6 text-sm">
               Ready to work on exciting projects?

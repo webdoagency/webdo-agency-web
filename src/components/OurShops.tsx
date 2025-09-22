@@ -36,7 +36,7 @@ const OurShops = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Our{" "}
-            <span className="bg-gradient-accent bg-clip-text text-transparent">
+            <span className="text-accent">
               Success Stories
             </span>
           </h2>
@@ -48,7 +48,7 @@ const OurShops = () => {
 
         {/* Featured Shops */}
         <div className="max-w-4xl mx-auto">
-          <Card className="glass-blurred card-3d overflow-hidden">
+          <Card className="neumorphic-soft neumorphic-3d overflow-hidden">
             <div className="p-6">
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-3">
@@ -59,7 +59,7 @@ const OurShops = () => {
                   />
                   <div>
                     <h3 className="text-lg font-bold">Ballers</h3>
-                    <Badge variant="secondary" className="bg-accent/20 text-accent text-xs">
+                    <Badge variant="secondary" className="neumorphic-pressed text-accent text-xs">
                       Fashion & Lifestyle
                     </Badge>
                   </div>
@@ -78,17 +78,17 @@ const OurShops = () => {
 
               {/* Stats */}
               <div className="grid grid-cols-3 gap-3">
-                <div className="text-center p-2 glass rounded-lg">
+                <div className="text-center p-2 neumorphic rounded-lg">
                   <ShoppingCart className="w-4 h-4 text-accent mx-auto mb-1" />
                   <div className="font-bold text-sm">50+</div>
                   <div className="text-xs text-muted-foreground">Categories</div>
                 </div>
-                <div className="text-center p-2 glass rounded-lg">
+                <div className="text-center p-2 neumorphic rounded-lg">
                   <Users className="w-4 h-4 text-accent mx-auto mb-1" />
                   <div className="font-bold text-sm">2K+</div>
                   <div className="text-xs text-muted-foreground">Customers</div>
                 </div>
-                <div className="text-center p-2 glass rounded-lg">
+                <div className="text-center p-2 neumorphic rounded-lg">
                   <TrendingUp className="w-4 h-4 text-accent mx-auto mb-1" />
                   <div className="font-bold text-sm">150%</div>
                   <div className="text-xs text-muted-foreground">Growth</div>
@@ -100,7 +100,7 @@ const OurShops = () => {
 
         {/* Technical Features */}
         <div className="mt-16">
-          <Card className="glass border-white/10">
+          <Card className="neumorphic">
             <CardHeader>
               <CardTitle className="text-center">Built with Modern Standards</CardTitle>
               <p className="text-center text-muted-foreground">
@@ -110,7 +110,7 @@ const OurShops = () => {
             <CardContent>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
                 {features.map((feature, index) => (
-                  <div key={index} className="text-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                  <div key={index} className="text-center p-3 rounded-lg neumorphic-pressed hover:neumorphic transition-all duration-200">
                     <div className="text-sm font-medium">{feature}</div>
                   </div>
                 ))}
@@ -121,7 +121,7 @@ const OurShops = () => {
 
         {/* CTA */}
         <div className="text-center mt-16">
-          <div className="glass rounded-2xl p-8 max-w-2xl mx-auto">
+          <div className="neumorphic rounded-2xl p-8 max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold mb-4">Ready to Build Your Success Story?</h3>
             <p className="text-muted-foreground mb-6">
               Let's create a high-performing eCommerce store that drives real results for your business.

@@ -5,22 +5,22 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-medium ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-2xl text-sm font-medium ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
-        default: "glass-morphism text-foreground hover:shadow-glow hover:-translate-y-1",
+        default: "neumorphic text-foreground hover-neumorphic neumorphic-interactive",
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-liquid",
+          "neumorphic bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
-          "glass border-white/30 text-foreground hover:shadow-liquid hover:-translate-y-1",
+          "neumorphic text-foreground hover-neumorphic neumorphic-interactive border border-border/20",
         secondary:
-          "glass-blurred text-foreground hover:shadow-card hover:-translate-y-1",
-        ghost: "hover:glass-morphism hover:text-accent-foreground transition-all duration-300",
+          "neumorphic-soft text-foreground hover-neumorphic neumorphic-interactive",
+        ghost: "hover:neumorphic-soft hover:text-accent-foreground transition-all duration-200",
         link: "text-accent underline-offset-4 hover:underline hover:text-accent-hover",
-        hero: "glass-morphism text-foreground border-accent/30 hover:shadow-glow hover:-translate-y-1 hover:border-accent/50",
-        accent: "bg-accent text-accent-foreground hover:bg-accent-hover hover:shadow-liquid hover:-translate-y-1",
-        glass: "glass text-foreground hover:bg-white/10 border-white/20",
+        hero: "neumorphic text-accent hover-neumorphic neumorphic-interactive",
+        accent: "neumorphic bg-accent text-accent-foreground hover:bg-accent-hover neumorphic-interactive",
+        pressed: "neumorphic-pressed text-foreground",
       },
       size: {
         default: "h-10 px-4 py-2",

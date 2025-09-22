@@ -68,7 +68,7 @@ const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Ready to{" "}
-            <span className="bg-gradient-accent bg-clip-text text-transparent">
+            <span className="text-accent">
               Launch?
             </span>
           </h2>
@@ -90,8 +90,8 @@ const Contact = () => {
             <div className="space-y-6">
               {contactInfo.map((info, index) => (
                 <div key={index} className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                    <info.icon className="w-5 h-5 text-primary-foreground" />
+                  <div className="w-12 h-12 neumorphic rounded-lg flex items-center justify-center flex-shrink-0">
+                    <info.icon className="w-5 h-5 text-accent" />
                   </div>
                   <div>
                     <div className="font-medium mb-1">{info.label}</div>
@@ -138,7 +138,7 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <Card className="shadow-card border-border/50">
+            <Card className="neumorphic-card">
               <CardHeader>
                 <CardTitle className="text-2xl">Start Your Project</CardTitle>
                 <p className="text-muted-foreground">

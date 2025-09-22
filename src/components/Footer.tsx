@@ -20,8 +20,8 @@ const Footer = () => {
   };
 
   return (
-    <footer className="glass-blurred border-t border-white/10 mt-32">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <footer className="neumorphic-floating rounded-3xl mx-4 mb-4 mt-32">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Logo & Company */}
           <div className="space-y-4">

@@ -13,26 +13,15 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center relative overflow-hidden liquid-flow"
+      className="min-h-screen flex items-center relative overflow-hidden"
     >
-      {/* Liquid Glass Background */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src={heroImage}
-          alt="eCommerce Growth"
-          className="w-full h-full object-cover opacity-10"
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background/95 to-background/80" />
-        <div className="absolute inset-0 bg-gradient-liquid opacity-40" />
-      </div>
-
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Build Your{" "}
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
+              <span className="text-accent">
                 Dream Store
               </span>{" "}
               Today
@@ -66,13 +55,6 @@ const Hero = () => {
                 Start Your Store
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                onClick={() => scrollToSection("businesses")}
-              >
-                Learn More
-              </Button>
             </div>
           </div>
 
@@ -80,22 +62,22 @@ const Hero = () => {
           <div className="hidden lg:block relative">
             <div className="relative">
               {/* Floating 3D Cards */}
-              <div className="absolute -top-8 -left-8 w-32 h-32 glass-morphism rounded-3xl p-4 animate-float liquid-3d">
-                <div className="w-full h-full bg-gradient-accent rounded-2xl flex items-center justify-center text-accent-foreground font-bold text-sm shadow-liquid">
+              <div className="absolute -top-8 -left-8 w-32 h-32 neumorphic rounded-3xl p-4 animate-float neumorphic-3d">
+                <div className="w-full h-full neumorphic-pressed rounded-2xl flex items-center justify-center text-accent font-bold text-sm">
                   Growth
                 </div>
               </div>
               
-              <div className="absolute -bottom-8 -right-8 w-24 h-24 glass-morphism rounded-3xl p-3 animate-[float_6s_ease-in-out_infinite_2s] liquid-3d">
-                <div className="w-full h-full bg-gradient-primary rounded-2xl flex items-center justify-center text-primary-foreground font-bold text-xs shadow-liquid">
+              <div className="absolute -bottom-8 -right-8 w-24 h-24 neumorphic rounded-3xl p-3 animate-[float_6s_ease-in-out_infinite_2s] neumorphic-3d">
+                <div className="w-full h-full neumorphic-pressed rounded-2xl flex items-center justify-center text-accent font-bold text-xs">
                   Sales
                 </div>
               </div>
 
-              <div className="w-80 h-80 glass-morphism rounded-[3rem] p-8 flex items-center justify-center card-3d shadow-3d">
+              <div className="w-80 h-80 neumorphic-card rounded-[3rem] p-8 flex items-center justify-center neumorphic-3d">
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-primary rounded-3xl mx-auto mb-4 flex items-center justify-center shadow-liquid">
-                    <CheckCircle className="w-8 h-8 text-primary-foreground" />
+                  <div className="w-16 h-16 neumorphic rounded-3xl mx-auto mb-4 flex items-center justify-center">
+                    <CheckCircle className="w-8 h-8 text-accent" />
                   </div>
                   <h3 className="text-lg font-semibold mb-2">Ready to Launch</h3>
                   <p className="text-sm text-muted-foreground">
